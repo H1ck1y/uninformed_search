@@ -1,12 +1,8 @@
 import sys
 import tkinter
 
-# Replace UCD_email_id with your UCD email id before the @ucdavis.edu.
-# For example, my UCD email is bmyao@ucdavis.edu, so I would replace UCD_email_id with "bmyao"
-    # and I will change the import statement below to be "import homework1_bmyao as homework"
-    # And my solution file will be named "homework1_bmyao.py", as required in the homework instructions.
-# Replace UCD_email_id with your UCD email id before the @ucdavis.edu.
-import homework1_handiao as homework
+
+import uninformed_agent as work
 
 class Light(tkinter.Canvas):
 
@@ -81,7 +77,7 @@ class LightsOutGUI(tkinter.Frame):
 
         tkinter.Frame.__init__(self, master)
 
-        self.puzzle = homework.create_puzzle(rows, cols)
+        self.puzzle = work.create_puzzle(rows, cols)
 
         self.board = Board(self, self.puzzle, rows, cols)
         self.board.pack(side=tkinter.LEFT, padx=1, pady=1)
